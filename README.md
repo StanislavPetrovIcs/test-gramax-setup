@@ -8,7 +8,7 @@
 
 ## EN
 
-### Prequrements
+### Prerequisites
 
 - Docker (Version 20.04 or higher)
   
@@ -19,7 +19,7 @@
 > [!WARNING]
 > Always be carefull when execution one line curl and sh scripts
 
-#### Mac Os and Linux
+#### Linux and macOS
 
 ```bash
 curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | sh; docker compose up
@@ -47,7 +47,7 @@ Little breakdown to command:
 
 3. `; docker compose up` - pulls docker images and starts containers.
 
-## Russian (RU)
+## RU
 
 ### Требования
 
@@ -62,7 +62,7 @@ Little breakdown to command:
 > [!WARNING]
 > Всегда будьте осторожны при выполнении однострочных скриптов использующих curl и sh
 
-#### Mac Os and Linux
+#### Linux and macOS
 
 ```bash
 curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | sh; docker compose up
