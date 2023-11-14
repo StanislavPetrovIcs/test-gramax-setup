@@ -19,8 +19,16 @@
 > [!WARNING]
 > Always be carefull when execution one line curl and sh scripts
 
+#### Mac Os and Linux
+
 ```bash
 curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | sh; docker compose up
+```
+
+#### Windows
+
+```powershell
+Invoke-Expression (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.ps1" -UseBasicParsing).Content; docker compose up
 ```
 
 Little breakdown to command:
@@ -46,8 +54,16 @@ Little breakdown to command:
 > [!WARNING]
 > Всегда будьте осторожны при выполнении однострочных скриптов использующих curl и sh
 
+#### Mac Os and Linux
+
 ```bash
 curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | sh; docker compose up
+```
+
+#### Windows
+
+```powershell
+Invoke-Expression (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.ps1" -UseBasicParsing).Content; docker compose up
 ```
 
 Пояснение команды:
