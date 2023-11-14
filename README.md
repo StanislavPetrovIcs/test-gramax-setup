@@ -25,6 +25,14 @@
 curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | sh; docker compose up
 ```
 
+Little breakdown to command:
+
+1. `curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh` - downloads a script to create docker-compose.yaml.
+
+2. `| sh` - pipes the content of the script to sh.
+
+3. `; docker compose up` - pulls docker images and starts containers.
+
 #### Windows
 
 ```powershell
@@ -33,9 +41,9 @@ Invoke-Expression (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Sta
 
 Little breakdown to command:
 
-1. `curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh` - downloads a script to create docker-compose.yaml.
+1. `Invoke-WebRequest -Uri "https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.ps1" -UseBasicParsing` - downloads a script to create docker-compose.yaml and getting content of it.
 
-2. `| sh` - pipes the content of the script to sh.
+2. `Invoke-Expression ` - executes script.
 
 3. `; docker compose up` - pulls docker images and starts containers.
 
@@ -60,6 +68,14 @@ Little breakdown to command:
 curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | sh; docker compose up
 ```
 
+Пояснение команды:
+
+1. `curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh` - скачивает скрипт для создания docker-compose.yaml.
+
+2. `| sh` - передает содержимое скрипта в sh.
+
+3. `; docker compose up` - загружает образы Docker и запускает контейнеры.
+
 #### Windows
 
 ```powershell
@@ -68,8 +84,8 @@ Invoke-Expression (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Sta
 
 Пояснение команды:
 
-1. `curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh` - скачивает скрипт для создания docker-compose.yaml.
+1. `(Invoke-WebRequest -Uri "https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.ps1" -UseBasicParsing).Content` - скачивает скрипт для создания docker-compose.yaml и получает его содержимое.
 
-2. `| sh` - передает содержимое скрипта в sh.
+2. `Invoke-Expression ` - передает содержимое скрипта в sh.
 
 3. `; docker compose up` - загружает образы Docker и запускает контейнеры.
