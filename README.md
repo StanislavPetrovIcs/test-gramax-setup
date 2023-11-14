@@ -2,9 +2,9 @@
 
 ## Languages:
 
-- [EN](#EN)
+- [EN](#en)
   
-- [RU](#RU)
+- [RU](#ru)
 
 ## EN
 
