@@ -52,8 +52,8 @@ curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main
 
 Пояснение команды:
 
-curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh - скачивает скрипт для создания docker-compose.yaml.
+1. `curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh` - скачивает скрипт для создания docker-compose.yaml.
 
-| sh - передает содержимое скрипта в sh.
+2. `| sh` - передает содержимое скрипта в sh.
 
-; docker compose up - загружает образы Docker и запускает контейнеры.
+3. `; docker compose up` - загружает образы Docker и запускает контейнеры.
