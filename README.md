@@ -17,9 +17,11 @@
 ### One-line execution
 
 > [!WARNING]
-> Always be carefull when execution one line curl and sh scripts
+> Always be careful when executing one line curl and sh scripts
 
-#### Linux and macOS
+#### Linux and MacOS
+
+Open terminal and execute this command:
 
 ```bash
 curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | sh; docker compose up
@@ -34,6 +36,8 @@ Little breakdown to command:
 3. `; docker compose up` - pulls docker images and starts containers.
 
 #### Windows
+
+Open powershell and execute this command:
 
 ```powershell
 Invoke-Expression (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.ps1" -UseBasicParsing).Content; docker compose up
@@ -60,9 +64,11 @@ Little breakdown to command:
 Введите следующую команду в терминале:
 
 > [!WARNING]
-> Всегда будьте осторожны при выполнении однострочных скриптов использующих curl и sh
+> Всегда будьте осторожны при выполнении однострочных скриптов, использующих curl и sh
 
-#### Linux and macOS
+#### Linux and MacOS
+
+Откройте терминал и запустите данную команду:
 
 ```bash
 curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | sh; docker compose up
@@ -77,6 +83,8 @@ curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main
 3. `; docker compose up` - загружает образы Docker и запускает контейнеры.
 
 #### Windows
+
+Откройте powershell и запустите данную команду:
 
 ```powershell
 Invoke-Expression (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.ps1" -UseBasicParsing).Content; docker compose up
