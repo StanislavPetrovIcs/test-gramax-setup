@@ -10,26 +10,50 @@
 
 ### Prequrements
 
-- Docker with version not below 20.04
+- Docker (Version 20.04 or higher)
   
-- Bash
+- sh
 
 ### One-line execution
 
+> [!WARNING]
+> Always be carefull when execution one line curl and sh scripts
+
 ```bash
-curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | bash; docker compose up
+curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | sh; docker compose up
 ```
 
-## RU
+Little breakdown to command:
 
-### Зависимости
+1. `curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh` - downloads a script to create docker-compose.yaml.
 
-- Докер с версией не ниже 20.04
+2. `| sh` - pipes the content of the script to sh.
 
-- Bash
+3. `; docker compose up` - pulls docker images and starts containers.
+
+## Russian (RU)
+
+### Требования
+
+- Docker (Версия 20.04 или выше)
+
+- sh
 
 ### Запуск с использованием одной команды
 
+Введите следующую команду в терминале:
+
+> [!WARNING]
+> Всегда будьте осторожны при выполнении однострочных скриптов использующих curl и sh
+
 ```bash
-curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | bash; docker compose up
+curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh | sh; docker compose up
 ```
+
+Пояснение команды:
+
+curl https://raw.githubusercontent.com/StanislavPetrovIcs/test-gramax-setup/main/setup.sh - скачивает скрипт для создания docker-compose.yaml.
+
+| sh - передает содержимое скрипта в sh.
+
+; docker compose up - загружает образы Docker и запускает контейнеры.
