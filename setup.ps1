@@ -5,12 +5,12 @@ services:
     container_name: gramax
     restart: unless-stopped
     ports:
-      - ${PORT:-80}:80
+      - `${PORT:-80}:80
     environment:
-      - ADMIN_LOGIN=${ADMIN_LOGIN:-"admin"}
-      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-"password"}
+      - ADMIN_LOGIN=`${ADMIN_LOGIN:-"admin"}
+      - ADMIN_PASSWORD=`${ADMIN_PASSWORD:-"password"}
     volumes:
-      - ${ROOT_PATH:-./gramax}:/app/data
+      - `${ROOT_PATH:-./gramax}:/app/data
     networks:
       - gramax-network
 
